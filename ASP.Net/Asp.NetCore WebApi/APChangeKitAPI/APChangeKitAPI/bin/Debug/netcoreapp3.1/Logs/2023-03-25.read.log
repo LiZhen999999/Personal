@@ -1,0 +1,43 @@
+
+＝＝＝＝＝＝＝＝＝＝
+【日志级别】：INFO 
+【记录时间】：2023-03-25 17:51:00,388 
+【执行时间】：[664]毫秒
+【信息详情】Application started. Press Ctrl+C to shut down.
+
+＝＝＝＝＝＝＝＝＝＝
+【日志级别】：INFO 
+【记录时间】：2023-03-25 17:51:00,627 
+【执行时间】：[903]毫秒
+【信息详情】Hosting environment: Development
+
+＝＝＝＝＝＝＝＝＝＝
+【日志级别】：INFO 
+【记录时间】：2023-03-25 17:51:00,637 
+【执行时间】：[913]毫秒
+【信息详情】Content root path: D:\CODE-ALL\SZ-AT\AT-N\FT\Web\WebService\APChangeKitAPI\APChangeKitAPI
+
+＝＝＝＝＝＝＝＝＝＝
+【日志级别】：ERROR
+【记录时间】：2023-03-25 17:51:46,477 
+【执行时间】：[46753]毫秒
+【信息详情】请求IP:::1,报错地址:localhost:15643/api/APChangeKit/GetInfo,请求方式：GET,参数:?orderNumber=123,异常描述：转机单号[123]不存在！,堆栈信息：   at APChangeKitAPI.Bll.APChangeKitBll.GetAPChangeKitCheckList(String orderNumer) in D:\CODE-ALL\SZ-AT\AT-N\FT\Web\WebService\APChangeKitAPI\APChangeKitAPI\Bll\APChangeKitBll.cs:line 58
+   at APChangeKitAPI.Controllers.APChangeKitController.GetInfo(String orderNumber) in D:\CODE-ALL\SZ-AT\AT-N\FT\Web\WebService\APChangeKitAPI\APChangeKitAPI\Controllers\APChangeKitController.cs:line 36
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+
+＝＝＝＝＝＝＝＝＝＝
+【日志级别】：INFO 
+【记录时间】：2023-03-25 17:51:46,628 
+【执行时间】：[46904]毫秒
+【信息详情】{"elaspedTime":"8296ms","request.body":"?orderNumber=123","request.executeStartTime":"2023-03-25 17:51:38.328","request.headers":{"Accept":"text/plain","Accept-Encoding":"gzip, deflate, br","Accept-Language":"zh-CN,zh;q=0.9","Connection":"keep-alive","Host":"localhost:15643","Referer":"http://localhost:15643/swagger/index.html","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36","sec-ch-ua":"\"Google Chrome\";v=\"111\", \"Not(A:Brand\";v=\"8\", \"Chromium\";v=\"111\"","sec-ch-ua-mobile":"?0","sec-ch-ua-platform":"\"Windows\"","Sec-Fetch-Site":"same-origin","Sec-Fetch-Mode":"cors","Sec-Fetch-Dest":"empty"},"request.method":"GET","request.remoteIpAddress":"::1","request.url":"/api/APChangeKit/GetInfo","response.body":"{\"Code\":7,\"Message\":\"转机单号[123]不存在！\",\"Data\":null}","response.executeEndTime":"2023-03-25 17:51:46.619"}

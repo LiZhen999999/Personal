@@ -1,0 +1,1474 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>APChangeKitAPI</name>
+    </assembly>
+    <members>
+        <member name="M:APChangeKitAPI.Bll.APChangeKitBll.GetAPChangeKitCheckList(System.String)">
+            <summary>
+            获取转机单详情
+            </summary>
+            <param name="orderNumer"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:APChangeKitAPI.Bll.APChangeKitBll.UpdateAPChangeKitCheckList(APChangeKitAPI.Models.DTO.APChangeKitChkListAddReq)">
+            <summary>
+            更新转机单CheckList（接口）
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:APChangeKitAPI.Bll.APChangeKitBll.SubmitToOA(System.String,System.String,System.String,System.String,System.String@)">
+            <summary>
+            填写完CheckList提交OA进入下一流程
+            </summary>
+            <param name="orderNum"></param>
+            <param name="userID"></param>
+            <param name="oaRequestID"></param>
+            <param name="oaNextStep"></param>
+            <param name="oaResultError"></param>
+            <returns></returns>
+            <exception cref="T:System.Data.DataException"></exception>
+        </member>
+        <member name="M:APChangeKitAPI.Bll.APChangeKitBll.UnlockToMES(System.String,System.String,System.String,System.String,System.String@)">
+            <summary>
+            填写完CheckList提交MES进行解锁
+            </summary>
+            <param name="process"></param>
+            <param name="orderNo"></param>
+            <param name="eqID"></param>
+            <param name="userID"></param>
+            <param name="resMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="T:APChangeKitAPI.Common.AppSettings">
+            <summary>
+            应用设置类
+            总类：对应json文件，确定json模块与对象
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.AppKeys.OAWebAPI">
+            <summary>
+            OA系统Web API服务器
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.AppKeys.MESWebService">
+            <summary>
+            MES服务器
+            </summary>
+        </member>
+        <member name="T:APChangeKitAPI.Common.HttpHelper">
+            <summary>
+            Http连接操作帮助类
+            </summary>
+        </member>
+        <member name="M:APChangeKitAPI.Common.HttpHelper.Execute(APChangeKitAPI.Common.HttpItem)">
+            <summary>
+            根据相传入的数据，得到相应页面数据
+            </summary>
+            <param name="item">参数类对象</param>
+            <returns>返回HttpResult类型</returns>
+        </member>
+        <member name="M:APChangeKitAPI.Common.HttpHelper.GetData(APChangeKitAPI.Common.HttpItem,APChangeKitAPI.Common.HttpResult)">
+            <summary>
+            获取数据的并解析的方法
+            </summary>
+            <param name="item"></param>
+            <param name="result"></param>
+        </member>
+        <member name="M:APChangeKitAPI.Common.HttpHelper.SetEncoding(APChangeKitAPI.Common.HttpItem,APChangeKitAPI.Common.HttpResult,System.Byte[])">
+            <summary>
+            设置编码
+            </summary>
+            <param name="item">HttpItem</param>
+            <param name="result">HttpResult</param>
+            <param name="ResponseByte">byte[]</param>
+        </member>
+        <member name="M:APChangeKitAPI.Common.HttpHelper.GetByte">
+            <summary>
+            提取网页Byte
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APChangeKitAPI.Common.HttpHelper.SetRequest(APChangeKitAPI.Common.HttpItem)">
+             <summary>
+             为请求准备参数
+             </summary>
+            <param name="item">参数列表</param>
+        </member>
+        <member name="M:APChangeKitAPI.Common.HttpHelper.SetCer(APChangeKitAPI.Common.HttpItem)">
+            <summary>
+            设置证书
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:APChangeKitAPI.Common.HttpHelper.SetCerList(APChangeKitAPI.Common.HttpItem)">
+            <summary>
+            设置多个证书
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:APChangeKitAPI.Common.HttpHelper.SetCookie(APChangeKitAPI.Common.HttpItem)">
+            <summary>
+            设置Cookie
+            </summary>
+            <param name="item">Http参数</param>
+        </member>
+        <member name="M:APChangeKitAPI.Common.HttpHelper.SetPostData(APChangeKitAPI.Common.HttpItem)">
+            <summary>
+            设置Post数据
+            </summary>
+            <param name="item">Http参数</param>
+        </member>
+        <member name="M:APChangeKitAPI.Common.HttpHelper.SetProxy(APChangeKitAPI.Common.HttpItem)">
+            <summary>
+            设置代理
+            </summary>
+            <param name="item">参数对象</param>
+        </member>
+        <member name="M:APChangeKitAPI.Common.HttpHelper.CheckValidationResult(System.Object,System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509Chain,System.Net.Security.SslPolicyErrors)">
+            <summary>
+            回调验证证书问题
+            </summary>
+            <param name="sender">流对象</param>
+            <param name="certificate">证书</param>
+            <param name="chain">X509Chain</param>
+            <param name="errors">SslPolicyErrors</param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:APChangeKitAPI.Common.HttpHelper.BindIPEndPointCallback(System.Net.ServicePoint,System.Net.IPEndPoint,System.Int32)">
+            <summary>
+            通过设置这个属性，可以在发出连接的时候绑定客户端发出连接所使用的IP地址。 
+            </summary>
+            <param name="servicePoint"></param>
+            <param name="remoteEndPoint"></param>
+            <param name="retryCount"></param>
+            <returns></returns>
+        </member>
+        <member name="T:APChangeKitAPI.Common.HttpItem">
+            <summary>
+            Http请求参考类
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.URL">
+            <summary>
+            请求URL必须填写
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.Method">
+            <summary>
+            请求方式默认为GET方式,当为POST方式时必须设置Postdata的值
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.Timeout">
+            <summary>
+            默认请求超时时间
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.ReadWriteTimeout">
+            <summary>
+            默认写入Post数据超时间
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.Host">
+            <summary>
+            设置Host的标头信息
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.KeepAlive">
+            <summary>
+             获取或设置一个值，该值指示是否与 Internet 资源建立持久性连接默认为true。
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.Accept">
+            <summary>
+            请求标头值 默认为text/html, application/xhtml+xml, */*
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.ContentType">
+            <summary>
+            请求返回类型默认 text/html
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.UserAgent">
+            <summary>
+            客户端访问信息默认Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.Encoding">
+            <summary>
+            返回数据编码默认为NUll,可以自动识别,一般为utf-8,gbk,gb2312
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.PostDataType">
+            <summary>
+            Post的数据类型
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.Postdata">
+            <summary>
+            Post请求时要发送的字符串Post数据
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.PostdataByte">
+            <summary>
+            Post请求时要发送的Byte类型的Post数据
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.CookieCollection">
+            <summary>
+            Cookie对象集合
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.Cookie">
+            <summary>
+            请求时的Cookie
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.Referer">
+            <summary>
+            来源地址，上次访问地址
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.CerPath">
+            <summary>
+            证书绝对路径
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.WebProxy">
+            <summary>
+            设置代理对象，不想使用IE默认配置就设置为Null，而且不要设置ProxyIp
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.IsToLower">
+            <summary>
+            是否设置为全文小写，默认为不转化
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.Allowautoredirect">
+            <summary>
+            支持跳转页面，查询结果将是跳转后的页面，默认是不跳转
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.Connectionlimit">
+            <summary>
+            最大连接数
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.ProxyUserName">
+            <summary>
+            代理Proxy 服务器用户名
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.ProxyPwd">
+            <summary>
+            代理 服务器密码
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.ProxyIp">
+            <summary>
+            代理 服务IP,如果要使用IE代理就设置为ieproxy
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.ResultType">
+            <summary>
+            设置返回类型String和Byte
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.Header">
+            <summary>
+            header对象
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.ProtocolVersion">
+            <summary>
+                获取或设置用于请求的 HTTP 版本。返回结果:用于请求的 HTTP 版本。默认为 System.Net.HttpVersion.Version11。
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.Expect100Continue">
+            <summary>
+             获取或设置一个 System.Boolean 值，该值确定是否使用 100-Continue 行为。如果 POST 请求需要 100-Continue 响应，则为 true；否则为 false。默认值为 true。
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.ClentCertificates">
+            <summary>
+            设置509证书集合
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.PostEncoding">
+            <summary>
+            设置或获取Post参数编码,默认的为Default编码
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.ResultCookieType">
+            <summary>
+            Cookie返回类型,默认的是只返回字符串类型
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.ICredentials">
+            <summary>
+            获取或设置请求的身份验证信息。
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.MaximumAutomaticRedirections">
+            <summary>
+            设置请求将跟随的重定向的最大数目
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.IfModifiedSince">
+            <summary>
+            获取和设置IfModifiedSince，默认为当前日期和时间
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.IPEndPoint">
+             <summary>
+             设置本地的出口ip和端口
+             </summary>]
+             <example>
+            item.IPEndPoint = new IPEndPoint(IPAddress.Parse("192.168.1.1"),80);
+             </example>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpItem.IsReset">
+            <summary>
+            是否重置request,response的值，默认不重置，当设置为True时request,response将被设置为Null
+            </summary>
+        </member>
+        <member name="T:APChangeKitAPI.Common.HttpResult">
+            <summary>
+            Http返回参数类
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpResult.Cookie">
+            <summary>
+            Http请求返回的Cookie
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpResult.CookieCollection">
+            <summary>
+            Cookie对象集合
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpResult.Result">
+            <summary>
+            返回的String类型数据 只有ResultType.String时才返回数据，其它情况为空
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpResult.ResultByte">
+            <summary>
+            返回的Byte数组 只有ResultType.Byte时才返回数据，其它情况为空
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpResult.Header">
+            <summary>
+            header对象
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpResult.StatusDescription">
+            <summary>
+            返回状态说明
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpResult.StatusCode">
+            <summary>
+            返回状态码,默认为OK
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpResult.ResponseUri">
+            <summary>
+            最后访问的URl
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Common.HttpResult.RedirectUrl">
+            <summary>
+            获取重定向的URl
+            </summary>
+        </member>
+        <member name="T:APChangeKitAPI.Common.ResultType">
+            <summary>
+            返回类型
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Common.ResultType.String">
+            <summary>
+            表示只返回字符串 只有Html有数据
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Common.ResultType.Byte">
+            <summary>
+            表示返回字符串和字节流 ResultByte和Html都有数据返回
+            </summary>
+        </member>
+        <member name="T:APChangeKitAPI.Common.PostDataType">
+            <summary>
+            Post的数据格式默认为string
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Common.PostDataType.String">
+            <summary>
+            字符串类型，这时编码Encoding可不设置
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Common.PostDataType.Byte">
+            <summary>
+            Byte类型，需要设置PostdataByte参数的值编码Encoding可设置为空
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Common.PostDataType.FilePath">
+            <summary>
+            传文件，Postdata必须设置为文件的绝对路径，必须设置Encoding的值
+            </summary>
+        </member>
+        <member name="T:APChangeKitAPI.Common.ResultCookieType">
+            <summary>
+            Cookie返回类型
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Common.ResultCookieType.String">
+            <summary>
+            只返回字符串类型的Cookie
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Common.ResultCookieType.CookieCollection">
+            <summary>
+            CookieCollection格式的Cookie集合同时也返回String类型的cookie
+            </summary>
+        </member>
+        <member name="M:APChangeKitAPI.Common.WebServiceCall.callWebService(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            调用接口
+            </summary>
+            <param name="methodName">方法名称</param>
+            <param name="param">参数名称</param>
+            <returns>返回值</returns>
+        </member>
+        <member name="M:APChangeKitAPI.Common.WebServiceCall.getRequestData(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            </summary>
+            <param name="methodName">方法名称</param>
+            <param name="param">参数</param>
+            <returns></returns>
+        </member>
+        <member name="M:APChangeKitAPI.Common.WebServiceCall.CheckValidationResult(System.Object,System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509Chain,System.Net.Security.SslPolicyErrors)">
+             <summary>
+             远程证书验证
+             </summary>
+        </member>
+        <member name="M:APChangeKitAPI.Controllers.APChangeKitController.GetInfo(System.String)">
+            <summary>
+            根据转机单号获取详情
+            </summary>
+            <param name="orderNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APChangeKitAPI.Controllers.APChangeKitController.UpdateCheckList(APChangeKitAPI.Models.DTO.APChangeKitChkListAddReq)">
+            <summary>
+            更新转机单CheckList
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APChangeKitAPI.DAL.APChangeKitDAL.GetAPChangeKit(APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo)">
+            <summary>
+            获取转机单
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:APChangeKitAPI.DAL.APChangeKitDAL.GetAPChangeKitDetail(APChangeKitAPI.Models.Entity.AP_ChangeKit_FormDetail)">
+            <summary>
+            获取转机单CheckList
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:APChangeKitAPI.DAL.APChangeKitDAL.UpdateAPChangeKitCheckList(APChangeKitAPI.Models.DTO.APChangeKitChkListAddReq)">
+            <summary>
+            更新转机单CheckList
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:APChangeKitAPI.DAL.APChangeKitDAL.UpdateAPChangeKitStatus(APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo)">
+            <summary>
+            更新转机单状态
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:APChangeKitAPI.DAL.APChangeKitDAL.InsertAPChangeKitLog(APChangeKitAPI.Models.Entity.AP_ChangeKit_Log)">
+            <summary>
+            插入转机单操作日志
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APChangeKitAPI.DAL.APChangeKitDAL.GetAPChangeKitConfig(APChangeKitAPI.Models.Entity.AP_ChangeKit_Config)">
+            <summary>
+            获取配置
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:APChangeKitAPI.DAL.APChangeKitDAL.GetAPChangeKitControl(APChangeKitAPI.Models.Entity.AP_ChangeKit_Control)">
+            <summary>
+            获取卡控配置
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:APChangeKitAPI.DAL.APChangeKitDAL.GetAPChangeKitControl(System.Int32)">
+            <summary>
+            获取卡控配置
+            </summary>
+            <param name="detailID"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:APChangeKitAPI.Middleware.RequestResponseLoggingMiddleware.GetResponse(Microsoft.AspNetCore.Http.HttpResponse)">
+            <summary>
+            获取响应内容
+            </summary>
+            <param name="response"></param>
+            <returns></returns>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListAddReq.OrderNum">
+            <summary>
+            转机单号    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListAddReq.User">
+            <summary>
+            工号
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListItemAdd.ID">
+            <summary>
+            自增主键    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListItemAdd.CheckItem">
+            <summary>
+            检查项目    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListItemAdd.CheckStandard">
+            <summary>
+            检查标准    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListItemAdd.CheckResult">
+            <summary>
+            检查结果    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListItemAdd.FileID">
+            <summary>
+            文件  
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListRes.ID">
+            <summary>
+            自增主键    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListRes.OrderNum">
+            <summary>
+            转机单号    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListRes.EQID">
+            <summary>
+            EQID    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListRes.Stage">
+            <summary>
+            Stage    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListRes.Status">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListRes.ChangKitType">
+            <summary>
+            转机单类型    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListRes.Before_Program">
+            <summary>
+            改机前-程序名    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListRes.Before_Map">
+            <summary>
+            改机前-线图    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListRes.Before_Group">
+            <summary>
+            改机前-Group    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListRes.Before_Bom">
+            <summary>
+            改机前-BOM    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListRes.After_Program">
+            <summary>
+            改机后-程序名    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListRes.After_Map">
+            <summary>
+            改机后-线图    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListRes.After_Group">
+            <summary>
+            改机后-Group    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListRes.After_Bom">
+            <summary>
+            改机后-BOM    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListRes.UpdateBy">
+            <summary>
+            修改人
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListItem.ID">
+            <summary>
+            自增主键    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListItem.ItemBlock">
+            <summary>
+            模块    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListItem.ItemBlockName">
+            <summary>
+            模块名称
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListItem.ItemIndex">
+            <summary>
+            项次    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListItem.CheckItem">
+            <summary>
+            检查项目    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListItem.CheckStandard">
+            <summary>
+            检查标准    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListItem.CheckResult">
+            <summary>
+            检查结果    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListItem.FileID">
+            <summary>
+            文件  
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListItem.FileName">
+            <summary>
+            文件名称
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListItem.FilePath">
+            <summary>
+            文件路径
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListItem.InputType">
+            <summary>
+            输入类型
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListItem.ControlTip">
+            <summary>
+            卡控信息
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.DTO.APChangeKitChkListItem.UpdateBy">
+            <summary>
+            修改人
+            </summary>
+        </member>
+        <member name="T:APChangeKitAPI.Models.Entity.AP_ChangeKit_Config">
+            <summary>
+                 
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Config.ID">
+            <summary>
+            自增主键    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Config.ConfigType">
+            <summary>
+            配置类型    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Config.ConfigKey">
+            <summary>
+            配置Key    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Config.ConfigValue">
+            <summary>
+            配置Value    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Config.ConfigIndex">
+            <summary>
+            配置项顺序    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Config.Status">
+            <summary>
+            1：有效 0：无效    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Config.CreateTime">
+            <summary>
+            创建时间    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Config.CreateBy">
+            <summary>
+            创建人    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Config.UpdateTime">
+            <summary>
+            修改时间    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Config.UpdateBy">
+            <summary>
+            修改人    
+            </summary>
+        </member>
+        <member name="T:APChangeKitAPI.Models.Entity.AP_ChangeKit_Control">
+            <summary>
+             AP_ChangeKit_Control    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Control.ID">
+            <summary>
+            自增主键    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Control.InputType">
+            <summary>
+            输入类型    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Control.ValueType">
+            <summary>
+            输入值类型
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Control.ControlExpression">
+            <summary>
+            卡控表达式    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Control.ControlTip">
+            <summary>
+            卡控提示    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Control.Status">
+            <summary>
+            1：有效 0：无效    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Control.CreateTime">
+            <summary>
+            创建时间    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Control.CreateBy">
+            <summary>
+            创建人    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Control.UpdateTime">
+            <summary>
+            修改时间    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Control.UpdateBy">
+            <summary>
+            修改人    
+            </summary>
+        </member>
+        <member name="T:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormDetail">
+            <summary>
+             AP_ChangeKit_FormDetail    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormDetail.ID">
+            <summary>
+            自增主键    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormDetail.OrderNum">
+            <summary>
+            转机单号    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormDetail.ItemIndex">
+            <summary>
+            项次    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormDetail.ItemBlock">
+            <summary>
+            模块    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormDetail.ItemBlockName">
+            <summary>
+            模块名称
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormDetail.CheckItem">
+            <summary>
+            检查项目    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormDetail.CheckStandard">
+            <summary>
+            检查标准    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormDetail.CheckResult">
+            <summary>
+            检查结果    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormDetail.FileID">
+            <summary>
+            文件  
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormDetail.ControlID">
+            <summary>
+            卡控ID
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormDetail.Remark">
+            <summary>
+            备注信息    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormDetail.CreateTime">
+            <summary>
+            创建时间    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormDetail.CreateBy">
+            <summary>
+            创建人    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormDetail.UpdateTime">
+            <summary>
+            修改时间    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormDetail.UpdateBy">
+            <summary>
+            修改人    
+            </summary>
+        </member>
+        <member name="T:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo">
+            <summary>
+             AP_ChangeKit_FormInfo    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.ID">
+            <summary>
+            自增主键    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.OrderNum">
+            <summary>
+            转机单号    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.Before_Program">
+            <summary>
+            改机前-程序名    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.Before_Map">
+            <summary>
+            改机前-线图    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.Before_Group">
+            <summary>
+            改机前-Group    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.Before_Bom">
+            <summary>
+            改机前-BOM    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.After_Program">
+            <summary>
+            改机后-程序名    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.After_Map">
+            <summary>
+            改机后-线图    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.After_Group">
+            <summary>
+            改机后-Group    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.After_Bom">
+            <summary>
+            改机后-BOM    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.EQID">
+            <summary>
+            EQID    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.EQType">
+            <summary>
+            EQType    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.EQKind">
+            <summary>
+            EQKind    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.Process">
+            <summary>
+            工序
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.Stage">
+            <summary>
+            Stage    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.PTNLot">
+            <summary>
+            PTNLot    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.Device">
+            <summary>
+            DEVICE    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.MASK">
+            <summary>
+            MASK    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.DetailID">
+            <summary>
+            表单详情ID    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.ChangKitType">
+            <summary>
+            转机单类型    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.CheckListID">
+            <summary>
+            对应的CheckList类型的ID    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.TestRequirement">
+            <summary>
+            验证要求，仅记录信息    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.DBFunction">
+            <summary>
+            DB功能，仅记录信息    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.EstimateStartTime">
+            <summary>
+            预计开始时间    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.EstimateEndTime">
+            <summary>
+            预计结束时间    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.Remark">
+            <summary>
+            备注    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.OAOrderNum">
+            <summary>
+            OA审批单号
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.ApproveTime">
+            <summary>
+            审核通过时间    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.EndTime">
+            <summary>
+            结束时间    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.EndOP">
+            <summary>
+            结束人    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.Status">
+            <summary>
+             0：无效 1：暂存 2：审批中 3：已驳回 4：填写CheckList 5：待检查 6：已完成 7：已取消    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.CreateTime">
+            <summary>
+            创建时间    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.CreateBy">
+            <summary>
+            创建人    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.UpdateTime">
+            <summary>
+            修改时间    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormInfo.UpdateBy">
+            <summary>
+            修改人    
+            </summary>
+        </member>
+        <member name="T:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormTemplate">
+            <summary>
+             AP_ChangeKit_FormTemplate    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormTemplate.ID">
+            <summary>
+            自增主键    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormTemplate.TypeID">
+            <summary>
+                
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormTemplate.EQType">
+            <summary>
+            机台类型    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormTemplate.ChangeType">
+            <summary>
+            改机项目    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormTemplate.Stage">
+            <summary>
+            工站    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormTemplate.ItemIndex">
+            <summary>
+            顺序    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormTemplate.ItemBlock">
+            <summary>
+            模块    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormTemplate.ItemBlockName">
+            <summary>
+            模块名称
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormTemplate.CheckItem">
+            <summary>
+            检查内容    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormTemplate.CheckStrandard">
+            <summary>
+            检查标准    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormTemplate.ControlID">
+            <summary>
+            卡控ID
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormTemplate.Status">
+            <summary>
+            1：有效 0：无效    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormTemplate.CreateTime">
+            <summary>
+            创建时间    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormTemplate.CreateBy">
+            <summary>
+            创建人    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormTemplate.UpdateTime">
+            <summary>
+            修改时间    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_FormTemplate.UpdateBy">
+            <summary>
+            修改人    
+            </summary>
+        </member>
+        <member name="T:APChangeKitAPI.Models.Entity.AP_ChangeKit_Log">
+            <summary>
+             AP_ChangeKit_Log    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Log.ID">
+            <summary>
+            自增主键    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Log.LogType">
+            <summary>
+            操作类型    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Log.OrderNum">
+            <summary>
+            转机单号    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Log.LogSource">
+            <summary>
+            日志来源    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Log.RequestParam">
+            <summary>
+            请求参数    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Log.Result">
+            <summary>
+            结果    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Log.CreateTime">
+            <summary>
+            创建时间    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.AP_ChangeKit_Log.CreateBy">
+            <summary>
+            创建人    
+            </summary>
+        </member>
+        <member name="T:APChangeKitAPI.Models.Entity.T_File">
+            <summary>
+             T_File    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.T_File.ID">
+            <summary>
+            自增主键    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.T_File.TrueFileName">
+            <summary>
+            真实文件名
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.T_File.FileName">
+            <summary>
+            文件名    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.T_File.Extension">
+            <summary>
+            文件后缀    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.T_File.FilePath">
+            <summary>
+            文件路径    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.T_File.Status">
+            <summary>
+            1：有效 0：无效    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.T_File.CreateTime">
+            <summary>
+            创建时间    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.T_File.CreateBy">
+            <summary>
+            创建人    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.T_File.UpdateTime">
+            <summary>
+            修改时间    
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Entity.T_File.UpdateBy">
+            <summary>
+            修改人    
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Models.Enums.APChangeKitStatus.Invalid">
+            <summary>
+            无效
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Models.Enums.APChangeKitStatus.Create">
+            <summary>
+            暂存
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Models.Enums.APChangeKitStatus.Approve">
+            <summary>
+            审核中
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Models.Enums.APChangeKitStatus.Reject">
+            <summary>
+            驳回
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Models.Enums.APChangeKitStatus.CheckList">
+            <summary>
+            填写CheckList
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Models.Enums.APChangeKitStatus.CheckListApprove">
+            <summary>
+            CheckList审核
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Models.Enums.APChangeKitStatus.Complete">
+            <summary>
+            已完成
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Models.Enums.APChangeKitStatus.Cancel">
+            <summary>
+            已取消
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Models.Enums.LogType.Add">
+            <summary>
+            新增
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Models.Enums.LogType.Update">
+            <summary>
+            更新
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Models.Enums.LogType.Delete">
+            <summary>
+            删除
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Models.Enums.ResultCode.Success">
+            <summary>
+            成功
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Models.Enums.ResultCode.Error">
+            <summary>
+            错误
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Models.Enums.ResultCode.Identity">
+            <summary>
+            无登录
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Models.Enums.ResultCode.Authentication">
+            <summary>
+            无权限
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Models.Enums.ResultCode.ParametersIncorrect">
+            <summary>
+            请求参数错误
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Models.Enums.ResultCode.NoData">
+            <summary>
+            无数据
+            </summary>
+        </member>
+        <member name="F:APChangeKitAPI.Models.Enums.ResultCode.Exception">
+            <summary>
+            未知异常
+            </summary>
+        </member>
+        <member name="T:APChangeKitAPI.Models.Result`1">
+            <summary>
+            结果数据
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Result`1.Code">
+            <summary>
+            状态码
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Result`1.Message">
+            <summary>
+            消息
+            </summary>
+        </member>
+        <member name="P:APChangeKitAPI.Models.Result`1.Data">
+            <summary>
+            响应数据
+            </summary>
+        </member>
+        <member name="M:APChangeKitAPI.Models.Result`1.Instance">
+            <summary>
+            实例化对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APChangeKitAPI.Models.Result`1.Instance(`0)">
+            <summary>
+            实例化对象
+            </summary>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APChangeKitAPI.Models.Result`1.Instance(System.String)">
+            <summary>
+            实例化对象
+            </summary>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APChangeKitAPI.Models.Result`1.Instance(APChangeKitAPI.Models.Enums.ResultCode)">
+            <summary>
+            实例化对象
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APChangeKitAPI.Models.Result`1.Instance(APChangeKitAPI.Models.Enums.ResultCode,System.String)">
+            <summary>
+            实例化对象
+            </summary>
+            <param name="code"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APChangeKitAPI.Models.Result`1.Error(System.String)">
+            <summary>
+            实例化错误对象
+            </summary>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APChangeKitAPI.Models.Result`1.Exception(System.String)">
+            <summary>
+            实例化错误对象
+            </summary>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APChangeKitAPI.Models.Result`1.Success(System.String)">
+            <summary>
+            实例化成功对象
+            </summary>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APChangeKitAPI.Models.Result`1.SetData(`0)">
+            <summary>
+            设置返回数据
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APChangeKitAPI.Models.Result`1.SetCode(APChangeKitAPI.Models.Enums.ResultCode)">
+            <summary>
+            设置返回码
+            </summary>
+            <param name="code"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APChangeKitAPI.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:APChangeKitAPI.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+            <param name="loggerFactory"></param>
+        </member>
+        <member name="M:APChangeKitAPI.Startup.ConfigureContainer(Autofac.ContainerBuilder)">
+            <summary>
+            AutoFac依赖注入
+            </summary>
+            <param name="builder"></param>
+        </member>
+    </members>
+</doc>
