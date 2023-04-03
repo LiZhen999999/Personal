@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FormPaperless</name>
+    </assembly>
+    <members>
+        <member name="M:FormPaperless.Controllers.AccountController.LoginAccount(FormPaperless.Core.LoginInfo)">
+            <summary>
+            用户账号登录
+            </summary>
+            <param name="loginInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormPaperless.Controllers.AccountController.LogoutAccount">
+            <summary>
+            用户登出
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FormPaperless.Controllers.ApiControllerBase.SuccessResult``1(``0)">
+            <summary>
+            成功状态返回结果
+            </summary>
+            <param name="data">返回的数据</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormPaperless.Controllers.ApiControllerBase.FailResult``1(System.String)">
+            <summary>
+            失败状态返回结果
+            </summary>
+            <param name="message">失败信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormPaperless.Controllers.ApiControllerBase.ErrorResult``1(System.String)">
+            <summary>
+            异常状态返回结果
+            </summary>
+            <param name="message">异常信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormPaperless.Controllers.ApiControllerBase.Result``1(FormPaperless.Core.ResultCode,``0,System.String)">
+            <summary>
+            自定义状态返回结果
+            </summary>
+            <param name="resultCode">状态码</param>
+            <param name="data">返回的数据</param>
+            <param name="message">返回的信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormPaperless.Controllers.DirectoryPermissionsController.GetDirectories(System.Int32)">
+            <summary>
+            根据用户ID返回该用户的目录权限
+            </summary>
+            <param name="ssDataQuery">查询条件</param>
+            <returns></returns>
+        </member>
+        <member name="M:FormPaperless.Controllers.GenericFormController.GetFormFormat(System.String)">
+            <summary>
+            通过传入FormName获取注册的点检内容
+            </summary>
+            <param name="sFormName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormPaperless.Controllers.GenericFormController.PostFormData(FormPaperless.Core.Model.GenericFormModel)">
+            <summary>
+            新增或更新点检数据，通过ID判定，ID为Null则新增，否则更新
+            </summary>
+            <param name="genericFormModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormPaperless.Controllers.GenericFormController.GetFormDataById(System.String,System.String)">
+            <summary>
+            通过FormTable名，ID获取已提交表单的详细信息
+            </summary>
+            <param name="sFormName"></param>
+            <param name="sID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FormPaperless.Controllers.GenericFormController.GetFormSummaryInfo">
+            <summary>
+            获取当前有效表单清单数据
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:FormPaperless.ServerInfoMiddleware">
+            <summary>
+            用于获取服务器信息的中间件
+            </summary>
+        </member>
+        <member name="M:FormPaperless.ServerInfoMiddleware.InitServerInformation(Microsoft.Extensions.Configuration.IConfiguration,FormPaperless.Core.ServerInfo)">
+            <summary>
+            获取配置文件中的服务器信息
+            </summary>
+            <param name="Configuration"></param>
+            <param name="serverInfo"></param>
+        </member>
+    </members>
+</doc>

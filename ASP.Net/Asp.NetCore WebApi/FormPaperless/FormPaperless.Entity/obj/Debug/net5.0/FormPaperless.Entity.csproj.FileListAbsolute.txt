@@ -1,0 +1,15 @@
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.Entity\bin\Debug\net5.0\FormPaperless.Entity.deps.json
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.Entity\bin\Debug\net5.0\FormPaperless.Entity.runtimeconfig.json
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.Entity\bin\Debug\net5.0\FormPaperless.Entity.runtimeconfig.dev.json
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.Entity\bin\Debug\net5.0\FormPaperless.Entity.dll
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.Entity\bin\Debug\net5.0\ref\FormPaperless.Entity.dll
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.Entity\bin\Debug\net5.0\FormPaperless.Entity.pdb
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.Entity\obj\Debug\net5.0\FormPaperless.Entity.csproj.AssemblyReference.cache
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.Entity\obj\Debug\net5.0\FormPaperless.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.Entity\obj\Debug\net5.0\FormPaperless.Entity.AssemblyInfoInputs.cache
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.Entity\obj\Debug\net5.0\FormPaperless.Entity.AssemblyInfo.cs
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.Entity\obj\Debug\net5.0\FormPaperless.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.Entity\obj\Debug\net5.0\FormPaperless.Entity.dll
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.Entity\obj\Debug\net5.0\ref\FormPaperless.Entity.dll
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.Entity\obj\Debug\net5.0\FormPaperless.Entity.pdb
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.Entity\obj\Debug\net5.0\FormPaperless.Entity.genruntimeconfig.cache

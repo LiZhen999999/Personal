@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormPaperless", "FormPaperless\FormPaperless.csproj", "{2443765D-8EF5-4766-BA2D-F7ADBEA85579}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormPaperless.Core", "FormPaperless.Entity\FormPaperless.Core.csproj", "{F28890E3-DDD6-4606-9339-7588448C27FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F7636533-8996-43C0-98F3-28644E72C212}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2443765D-8EF5-4766-BA2D-F7ADBEA85579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2443765D-8EF5-4766-BA2D-F7ADBEA85579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2443765D-8EF5-4766-BA2D-F7ADBEA85579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2443765D-8EF5-4766-BA2D-F7ADBEA85579}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F28890E3-DDD6-4606-9339-7588448C27FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F28890E3-DDD6-4606-9339-7588448C27FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F28890E3-DDD6-4606-9339-7588448C27FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F28890E3-DDD6-4606-9339-7588448C27FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {832B8FB5-1DCE-41CE-953B-C55D64581386}
+	EndGlobalSection
+EndGlobal

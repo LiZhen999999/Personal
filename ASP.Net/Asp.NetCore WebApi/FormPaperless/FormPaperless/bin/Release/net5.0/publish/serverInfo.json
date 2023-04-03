@@ -1,0 +1,11 @@
+﻿{
+  "DomainName": "ptn.gwkf.cn", //AD账户域名
+  "MesServer": "SZdevqas", //MES服务器
+  "AresServer": "SZdevqas", //ARES API服务器
+  "MesDatabase": "qMESDB", //MES数据库
+  "AresDatabase": "qEMSDB", //EMS数据库
+  "SpcDatabase": "SPCDB", //SPC数据库
+  "MaterialDatabase": "qMATERIAL", //Material数据库
+  "PtiDatabase": "qPTIDB", //Titan数据库
+  "PlsDatabase": "PLSDB", //Titan数据库
+}

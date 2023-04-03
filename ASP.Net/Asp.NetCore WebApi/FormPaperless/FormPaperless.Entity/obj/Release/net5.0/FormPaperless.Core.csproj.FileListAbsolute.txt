@@ -1,0 +1,17 @@
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.Entity\bin\Release\net5.0\FormPaperless.Core.deps.json
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.Entity\bin\Release\net5.0\FormPaperless.Core.runtimeconfig.json
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.Entity\bin\Release\net5.0\FormPaperless.Core.runtimeconfig.dev.json
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.Entity\bin\Release\net5.0\FormPaperless.Core.dll
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.Entity\bin\Release\net5.0\FormPaperless.Core.pdb
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.Entity\bin\Release\net5.0\PTN_dbLink.dll
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.Entity\obj\Release\net5.0\FormPaperless.Core.csproj.AssemblyReference.cache
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.Entity\obj\Release\net5.0\FormPaperless.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.Entity\obj\Release\net5.0\FormPaperless.Core.AssemblyInfoInputs.cache
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.Entity\obj\Release\net5.0\FormPaperless.Core.AssemblyInfo.cs
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.Entity\obj\Release\net5.0\FormPaperless.Core.csproj.CoreCompileInputs.cache
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.Entity\obj\Release\net5.0\FormPaperless.Core.csproj.CopyComplete
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.Entity\obj\Release\net5.0\FormPaperless.Core.dll
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.Entity\obj\Release\net5.0\refint\FormPaperless.Core.dll
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.Entity\obj\Release\net5.0\FormPaperless.Core.pdb
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.Entity\obj\Release\net5.0\FormPaperless.Core.genruntimeconfig.cache
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.Entity\obj\Release\net5.0\ref\FormPaperless.Core.dll

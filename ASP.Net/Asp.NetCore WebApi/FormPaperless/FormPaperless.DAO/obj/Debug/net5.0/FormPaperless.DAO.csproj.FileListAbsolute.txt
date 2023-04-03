@@ -1,0 +1,28 @@
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.DAO\bin\Debug\net5.0\FormPaperless.DAO.deps.json
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.DAO\bin\Debug\net5.0\FormPaperless.DAO.dll
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.DAO\bin\Debug\net5.0\ref\FormPaperless.DAO.dll
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.DAO\bin\Debug\net5.0\FormPaperless.DAO.pdb
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.DAO\bin\Debug\net5.0\PTN_dbLink.dll
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.DAO\obj\Debug\net5.0\FormPaperless.DAO.csproj.AssemblyReference.cache
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.DAO\obj\Debug\net5.0\FormPaperless.DAO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.DAO\obj\Debug\net5.0\FormPaperless.DAO.AssemblyInfoInputs.cache
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.DAO\obj\Debug\net5.0\FormPaperless.DAO.AssemblyInfo.cs
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.DAO\obj\Debug\net5.0\FormPaperless.DAO.csproj.CoreCompileInputs.cache
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.DAO\obj\Debug\net5.0\FormPaperless.DAO.csproj.CopyComplete
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.DAO\obj\Debug\net5.0\FormPaperless.DAO.dll
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.DAO\obj\Debug\net5.0\ref\FormPaperless.DAO.dll
+C:\Users\Randallyang.PTN\source\repos\FormPaperless\FormPaperless.DAO\obj\Debug\net5.0\FormPaperless.DAO.pdb
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.DAO\bin\Debug\net5.0\FormPaperless.Dao.deps.json
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.DAO\bin\Debug\net5.0\FormPaperless.Dao.dll
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.DAO\bin\Debug\net5.0\FormPaperless.Dao.pdb
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.DAO\bin\Debug\net5.0\PTN_dbLink.dll
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.DAO\obj\Debug\net5.0\FormPaperless.Dao.csproj.AssemblyReference.cache
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.DAO\obj\Debug\net5.0\FormPaperless.Dao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.DAO\obj\Debug\net5.0\FormPaperless.Dao.AssemblyInfoInputs.cache
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.DAO\obj\Debug\net5.0\FormPaperless.Dao.AssemblyInfo.cs
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.DAO\obj\Debug\net5.0\FormPaperless.Dao.csproj.CoreCompileInputs.cache
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.DAO\obj\Debug\net5.0\FormPaperless.Dao.csproj.CopyComplete
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.DAO\obj\Debug\net5.0\FormPaperless.Dao.dll
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.DAO\obj\Debug\net5.0\refint\FormPaperless.Dao.dll
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.DAO\obj\Debug\net5.0\FormPaperless.Dao.pdb
+C:\Users\jeremy zhou\Desktop\无纸化\FormPaperless\FormPaperless.DAO\obj\Debug\net5.0\ref\FormPaperless.Dao.dll
